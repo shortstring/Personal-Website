@@ -10,13 +10,13 @@ function App() {
     <Layout>
     <h1>Welcome to my portfolio website</h1>
         <Switch>
-          <Route path='/' exact>
+          <Route path='/Personal-Website/' exact>
             <AboutPage/>
           </Route>
-          <Route path='/my-projects'>
+          <Route path='/Personal-Website/my-projects'>
             <PortfolioPage/>  
           </Route>
-          <Route path='/contact-me'>
+          <Route path='/Personal-Website/contact-me'>
             <ContactPage/>  
           </Route>
         </Switch>

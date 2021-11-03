@@ -6,13 +6,13 @@ function MainNavigation() {
         <nav>
             <ul>
                 <li>
-                    <Link to ="/">About Me</Link>
+                    <Link to ="/Personal-Website/">About Me</Link>
                 </li>
                 <li>
-                    <Link to ="my-projects">My Projects</Link>
+                    <Link to ="/Personal-Website/my-projects">My Projects</Link>
                 </li>
                 <li>
-                    <Link to ="contact-me">Contact Me</Link>
+                    <Link to ="/Personal-Website/contact-me">Contact Me</Link>
                 </li>
             </ul>
         </nav>
