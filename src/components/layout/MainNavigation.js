@@ -3,19 +3,21 @@ import { Link } from 'react-router-dom';
 
 function MainNavigation() {
     return (<header className={classes.header}>
-        <nav>
-            <ul>
-                <li>
-                    <Link to ="/Personal-Website/">About Me</Link>
-                </li>
-                <li>
-                    <Link to ="/Personal-Website/my-projects">My Projects</Link>
-                </li>
-                <li>
-                    <Link to ="/Personal-Website/contact-me">Contact Me</Link>
-                </li>
-            </ul>
-        </nav>
+        <div className ={classes.outterdiv}>
+            <nav className ={classes.nav}>
+                <ul className={classes.navlist}>
+                    <li>
+                        <Link to ="/Personal-Website/" className={classes.navitem}>About Me</Link>
+                    </li>
+                    <li>
+                        <Link to ="/Personal-Website/my-projects" className={classes.navitem}>My Projects</Link>
+                    </li>
+                    <li>
+                        <Link to ="/Personal-Website/contact-me" className={classes.navitem}>Contact Me</Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>);
 }
 

@@ -1,3 +1,33 @@
 .header {
     color: red;
+    background: #fff;
+}
+
+.nav {
+    align-self: center;
+    background: rgb(24, 96, 124);
+    /* style: none; */
+    width: 500px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navitem {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navitem:hover {
+    background-color: rgb(28, 28, 90);
+}
+
+.outterdiv {
+    text-align: -webkit-center;
 }

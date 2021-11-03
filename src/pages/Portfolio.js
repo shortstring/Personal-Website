@@ -1,7 +1,8 @@
+import ProjectItem from '../components/projects/ProjectItem';
 function PortfolioPage() {
 
     return (<section>
-        <h1>Portfolio Page</h1>
+        <ProjectItem/>
     </section>);
 }
 

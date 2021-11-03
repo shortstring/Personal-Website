@@ -1,0 +1,19 @@
+.item {
+    list-style: none;
+}
+
+.description {
+    background-color: #737180;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.title {
+    text-align: center;
+}
+
+.image {
+    max-width: 90vw;
+    height: auto;
+}

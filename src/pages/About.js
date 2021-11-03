@@ -1,8 +1,10 @@
+import AboutItem from '../components/abouts/AboutItem.js'
+
 function AboutPage() {
 
-    return (<section>
-        <h1>About Page</h1>
-    </section>);
+    return (
+        <AboutItem/>
+    );
 }
 
 export default AboutPage;

@@ -8,7 +8,6 @@ import PortfolioPage from './pages/Portfolio'
 function App() {
   return (
     <Layout>
-    <h1>Welcome to my portfolio website</h1>
         <Switch>
           <Route path='/Personal-Website/' exact>
             <AboutPage/>
