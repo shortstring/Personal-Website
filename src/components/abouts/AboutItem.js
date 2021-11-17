@@ -6,7 +6,7 @@ function AboutItem(props) {
             <Card>
                 <section>
                     <div className={classes.container}> Hi, I'm Ashton 👋
-                        <h3><b>Self Employed Full Time Game Developer</b></h3>
+                        <h3><b> Full Time Self Employed Game Developer</b></h3>
                         <h4>🌲Portland, Oregon</h4>
                         <h4>🖥️Languages and Tools I use/have used</h4>
                         <div>

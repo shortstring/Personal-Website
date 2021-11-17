@@ -21,7 +21,8 @@ function ProjectItem(props) {
                 </div>
                 <a href= {props.github}>GitHub Repo</a>
                 <div className={classes.actions}>
-                    <button onClick={buttonHandler}>YEET</button>
+                    <button onClick={buttonHandler}>uhh</button>
+                    
                 </div>
             </Card>
         </li>
