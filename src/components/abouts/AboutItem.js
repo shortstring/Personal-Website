@@ -6,9 +6,9 @@ function AboutItem(props) {
             <Card>
                 <section>
                     <div className={classes.container}> Hi, I'm Ashton 👋
-                        <h3><b>Full Stack Developer</b></h3>
+                        <h3><b>Self Employed Full Time Game Developer</b></h3>
                         <h4>🌲Portland, Oregon</h4>
-                        <h4>🖥️Languages and Tools</h4>
+                        <h4>🖥️Languages and Tools I use/have used</h4>
                         <div>
                             <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt='javascript'/>
                             <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt ='vuejs'/>

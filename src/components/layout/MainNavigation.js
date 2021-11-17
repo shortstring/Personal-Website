@@ -15,6 +15,9 @@ function MainNavigation() {
                     <li>
                         <Link to ="/Personal-Website/contact-me" className={classes.navitem}>Contact Me</Link>
                     </li>
+                    <li>
+                        <Link to ="/Personal-Website/gameblog" className={classes.navitem}>Game Dev Blog</Link>
+                    </li>
                 </ul>
             </nav>
         </div>

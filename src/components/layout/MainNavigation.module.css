@@ -7,15 +7,16 @@
     align-self: center;
     background: rgb(24, 96, 124);
     /* style: none; */
-    width: 500px;
+    /* width: 500px; */
 }
 
 .navlist {
     list-style: none;
     display: flex;
-    padding: 20px;
+    padding: 20 px;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .navitem {
