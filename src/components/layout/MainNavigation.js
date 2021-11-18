@@ -7,16 +7,16 @@ function MainNavigation() {
             <nav className ={classes.nav}>
                 <ul className={classes.navlist}>
                     <li>
-                        <Link to ="/Personal-Website/" className={classes.navitem}>About Me</Link>
+                        <Link to ="/" className={classes.navitem}>About Me</Link>
                     </li>
                     <li>
-                        <Link to ="/Personal-Website/my-projects" className={classes.navitem}>My Projects</Link>
+                        <Link to ="/my-projects" className={classes.navitem}>My Projects</Link>
                     </li>
                     <li>
-                        <Link to ="/Personal-Website/contact-me" className={classes.navitem}>Contact Me</Link>
+                        <Link to ="/contact-me" className={classes.navitem}>Contact Me</Link>
                     </li>
                     <li>
-                        <Link to ="/Personal-Website/gameblog" className={classes.navitem}>Game Dev Blog</Link>
+                        <Link to ="/gameblog" className={classes.navitem}>Game Dev Blog</Link>
                     </li>
                 </ul>
             </nav>

@@ -10,19 +10,18 @@ function App() {
   return (
     <Layout>
         <Switch>
-          <Route path='/Personal-Website/' exact>
+          <Route path='/' exact>
             <AboutPage/>
           </Route>
-          <Route path='/Personal-Website/my-projects'>
+          <Route path='/my-projects'>
             <PortfolioPage/>  
           </Route>
-          <Route path='/Personal-Website/contact-me'>
+          <Route path='/contact-me'>
             <ContactPage/>  
           </Route>
-          <Route path='/Personal-Website/gameblog'>
+          <Route path='/gameblog'>
             <GameBlogPage/> 
           </Route>
-
         </Switch>
     </Layout>
     );
