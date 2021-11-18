@@ -10,13 +10,13 @@ let myProjects = [
     {
         title: 'The Movie Review Application',
         image: 'https://user-images.githubusercontent.com/77479441/139770884-067b4de5-7e2e-4469-b76f-22f2824be346.gif',
-        description: 'The project is a movie review application made with Django and VueJs.',
+        description: 'The project is a movie review application made with TMDB api, Django and VueJs.',
         github: 'https://github.com/shortstring/The-Movie-Review-Application'
     },
     {
         title: 'Recipe Finder',
         image: 'https://user-images.githubusercontent.com/77479441/139489018-718b13dc-c681-45db-9907-0bced1c62347.gif',
-        description: 'This is a recipe application that allows the user to search for and save recipes from the spoonacular API.',
+        description: 'This is a recipe application that allows the user to search for and save recipes from the spoonacular API. Made with python and the python library TKinter.',
         github: 'https://github.com/shortstring/Recipe-Finder'
     }
 ];
