@@ -2,9 +2,41 @@
 import Card from "../components/ui/Card.js"
 import classes from './GameBlog.module.css';
 function GameBlogPage() {
+//     <h1 className={classes.title}>Development blog</h1>
+    //     <Card>
+    //     <h2 className = {classes.date}>19 Nov 2021</h2>
+    //     <ul className={classes.ul}>
+    //         <li className={classes.li}>
+    //                 <p>
 
+    //             </p>
+    //         </li>
+
+    //         <li className={classes.li}>
+    //                 <p>
+
+    //             </p>
+    //         </li>
+    //     </ul>
+    //     </Card>
     return (<section>
-        <h1 className ={classes.title}>Development blog</h1>
+        <Card>
+        <h2 className = {classes.date}>18 Nov 2021</h2>
+        <ul className={classes.ul}>
+            <li className={classes.li}>
+                <p>
+                    First interaction with backend performed today.
+                </p>
+            </li>
+
+            <li className={classes.li}>
+                <p>
+                    When players click the login button they are now logged using their computers system ID . 
+                </p>
+            </li>
+        </ul>
+        </Card>
+
         <Card>
         <h2 className = {classes.date}>17 Nov 2021</h2>
         <ul className={classes.ul}>
