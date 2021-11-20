@@ -21,6 +21,28 @@ function GameBlogPage() {
     //     </Card>
     return (<section>
         <Card>
+        <h2 className = {classes.date}>19 Nov 2021</h2>
+        <ul className={classes.ul}>
+            <li className={classes.li}>
+                <p>
+                    Player minimap added.
+                </p>
+            </li>
+
+            <li className={classes.li}>
+                <p>
+                    Port UI for buying shields added.
+                </p>
+                </li>
+            <li className={classes.li}>
+                <p>
+                    Main menu UI for all user registration created.
+                </p>
+            </li>    
+        </ul>
+        </Card>
+
+        <Card>
         <h2 className = {classes.date}>18 Nov 2021</h2>
         <ul className={classes.ul}>
             <li className={classes.li}>
