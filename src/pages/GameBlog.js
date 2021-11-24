@@ -19,7 +19,66 @@ function GameBlogPage() {
     //         </li>
     //     </ul>
     //     </Card>
+
+
+
+    //             </p>
+    //         </li>
+
+    //         <li className={classes.li}>
+    //                 <p>
+
+    //             </p>
+    //         </li>
+    //     </ul>
+    //     </Card>
+
+    //             </p>
+    //         </li>
+
+    //         <li className={classes.li}>
+    //                 <p>
+
+    //             </p>
+    //         </li>
+    //     </ul>
+    //     </Card>
     return (<section>
+        <Card>
+        <h2 className = {classes.date}>24 Nov 2021</h2>
+        <ul className={classes.ul}>
+            <li className={classes.li}>
+                <p>
+                    Docking at ports added and some port UI added.
+                </p>
+                    <iframe title="gamegif4" src="https://giphy.com/embed/7ckIlX54JL3KLtv4TO"></iframe>
+
+            </li>
+            <li className={classes.li}>
+                <p>
+                    Player UI changes, work on Inventory UI started.
+                </p>
+            </li>
+        </ul>
+        </Card>
+        <Card>
+        <h2 className = {classes.date}>23 Nov 2021</h2>
+        <ul className={classes.ul}>
+            <li className={classes.li}>
+                <p>
+                    Player Registration and Login by Username added.
+                </p>
+                    <iframe title ="gamegif2" src="https://giphy.com/embed/WfYMRFFmW44hdtfei1"></iframe>
+
+            </li>
+            <li className={classes.li}>
+                <p>
+                    Functionality added to all main menu buttons.
+                </p>
+                    <iframe title="gamegif3" src="https://giphy.com/embed/nnJfcuZWjjEapPiSQE"></iframe>
+            </li>
+        </ul>
+        </Card>
         <Card>
         <h2 className = {classes.date}>19 Nov 2021</h2>
         <ul className={classes.ul}>

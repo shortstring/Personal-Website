@@ -10,7 +10,7 @@ function App() {
   return (
     <Layout>
         <Switch>
-          <Route path='/' exact>
+          <Route path='/Personal-Website/' exact>
             <AboutPage/>
           </Route>
           <Route path='/my-projects'>

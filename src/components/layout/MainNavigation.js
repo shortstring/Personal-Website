@@ -7,7 +7,7 @@ function MainNavigation() {
             <nav className ={classes.nav}>
                 <ul className={classes.navlist}>
                     <li>
-                        <Link to ="/" className={classes.navitem}>About Me</Link>
+                        <Link to ="/Personal-Website/" className={classes.navitem}>About Me</Link>
                     </li>
                     <li>
                         <Link to ="/my-projects" className={classes.navitem}>My Projects</Link>
