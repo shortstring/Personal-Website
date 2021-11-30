@@ -1,165 +1,86 @@
 
-import Card from "../components/ui/Card.js"
-import classes from './GameBlog.module.css';
+// import Card from "../components/ui/Card.js"
+// import classes from './GameBlog.module.css';
+import { useState, useEffect } from 'react';
+import GameBlogPostList from '../components/gameblog/GameBlogPostList.js';
+// import GameBlogPost from '../components/gameblog/GameBlogPost';
+
+// const DUMMY_DATA = [
+//     {
+//     id: 'post1',
+//         update: [
+//             "Scene transitions are now handled by index rather than title.",
+//             "Players are now added to a list and the solar then checks the list to find a player to target.",
+
+//         ],
+//     image:
+//     'https://giphy.com/embed/ZqiLAVj3Bnwkue8YoE',
+//     },
+// ];
+
+
 function GameBlogPage() {
-//     <h1 className={classes.title}>Development blog</h1>
-    //     <Card>
-    //     <h2 className = {classes.date}>19 Nov 2021</h2>
-    //     <ul className={classes.ul}>
-    //         <li className={classes.li}>
-    //                 <p>
-
-    //             </p>
-    //         </li>
-
-    //         <li className={classes.li}>
-    //                 <p>
-
-    //             </p>
-    //         </li>
-    //     </ul>
-    //     </Card>
+    const [isLoading, setIsLoading] = useState(true); //returns an array with two elements, element 1 is current state snapshot and 2nd is a function for updating the state
+    const [loadedGameBlogPosts, setLoadedGameBlogPosts] = useState([]);
 
 
+    useEffect(() => {
+        setIsLoading(true);
+        //excuted only under certain circumstances, when the 2nd argument has changed
+        // fetch('https://react-getting-started-b876f-default-rtdb.firebaseio.com/meetups.json'
 
-    //             </p>
-    //         </li>
+        fetch('https://gamedevblog-fb536-default-rtdb.firebaseio.com/blogposts.json'
+        //fetch defaults to a get request, and returns a promise
+        ).then(response => {
+            return response.json();//json also returns a promise as well so.. it has to be returned/resolved first
+        }).then(data => {
+            //we want to extract an array of meetups and then pass to meetup list
+            const GameBlogPosts = [];
+            for (const key in data) {
+                console.log("data: " + key.date)
+                const blogpost = {
+                    id: key,
+                    ...data[key]
+                    // ... is called the spread operator (default js), copies all key value pairs
+                };
+                GameBlogPosts.push(blogpost);
+            }
+            console.log(GameBlogPosts)
+            setIsLoading(false);
+            setLoadedGameBlogPosts(GameBlogPosts);
+        });
+    }, []);
+    console.log(loadedGameBlogPosts)
 
-    //         <li className={classes.li}>
-    //                 <p>
-
-    //             </p>
-    //         </li>
-    //     </ul>
-    //     </Card>
-
-    //             </p>
-    //         </li>
-
-    //         <li className={classes.li}>
-    //                 <p>
-
-    //             </p>
-    //         </li>
-    //     </ul>
-    //     </Card>
-    return (<section>
-        <Card>
-        <h2 className = {classes.date}>24 Nov 2021</h2>
-        <ul className={classes.ul}>
-            <li className={classes.li}>
-                <p>
-                    Docking at ports added and some port UI added.
-                </p>
-                    <iframe title="gamegif4" src="https://giphy.com/embed/7ckIlX54JL3KLtv4TO"></iframe>
-
-            </li>
-            <li className={classes.li}>
-                <p>
-                    Player UI changes, work on Inventory UI started.
-                </p>
-            </li>
-        </ul>
-        </Card>
-        <Card>
-        <h2 className = {classes.date}>23 Nov 2021</h2>
-        <ul className={classes.ul}>
-            <li className={classes.li}>
-                <p>
-                    Player Registration and Login by Username added.
-                </p>
-                    <iframe title ="gamegif2" src="https://giphy.com/embed/WfYMRFFmW44hdtfei1"></iframe>
-
-            </li>
-            <li className={classes.li}>
-                <p>
-                    Functionality added to all main menu buttons.
-                </p>
-                    <iframe title="gamegif3" src="https://giphy.com/embed/nnJfcuZWjjEapPiSQE"></iframe>
-            </li>
-        </ul>
-        </Card>
-        <Card>
-        <h2 className = {classes.date}>19 Nov 2021</h2>
-        <ul className={classes.ul}>
-            <li className={classes.li}>
-                <p>
-                    Player minimap added.
-                </p>
-            </li>
-
-            <li className={classes.li}>
-                <p>
-                    Port UI for buying shields added.
-                </p>
-                </li>
-            <li className={classes.li}>
-                <p>
-                    Main menu UI for all user registration created.
-                </p>
-            </li>    
-        </ul>
-        </Card>
-
-        <Card>
-        <h2 className = {classes.date}>18 Nov 2021</h2>
-        <ul className={classes.ul}>
-            <li className={classes.li}>
-                <p>
-                    First interaction with backend performed today.
-                </p>
-            </li>
-
-            <li className={classes.li}>
-                <p>
-                    When players click the login button they are now logged using their computers system ID . 
-                </p>
-            </li>
-        </ul>
-        </Card>
-
-        <Card>
-        <h2 className = {classes.date}>17 Nov 2021</h2>
-        <ul className={classes.ul}>
-            <li className={classes.li}>
-                <p>
-                    Fixed a bug that was loading two scenes at the same time when changing scenes.
-                </p>
-            </li>
-
-            <li className={classes.li}>
-                <p>
-                    fixed some bugs with the player tracker not properly adding players to the player tracking list.
-                </p>
-            </li>
-        </ul>
-        </Card>
-
-        <Card>
-        <h2 className = {classes.date}>16 Nov 2021</h2>
-        <ul className= {classes.ul}>
-            <li className={classes.li}>
-                <p>
-                    Implemented dynamic solar targeting. This required me to start tracking players as they enter/leave systems. 
-                </p>
-            </li>
-            <li className={classes.li}>
-                <p>
-                    Players are now added to a list and the solar then checks the list to find a player to target.
-                </p>
-            </li>
-            <li className={classes.li}>
-                <p>
-                    Scene transitions are now handled by index rather than title.
-                </p>
-            </li>
-        </ul>
-        <iframe title ="gamegif" src="https://giphy.com/embed/ZqiLAVj3Bnwkue8YoE"></iframe>
-        </Card>
-        
-        
-
-    </section>);
+    //arg 1 is a function , 2nd arg is an array of external dependancies
+    //this code will only run once when the page is rendered for the first time, because there are no external dependancies
+    if (isLoading) {
+        return (
+            <section>
+                <p>Loading...</p>
+            </section>
+        );
+    }
+    return (<GameBlogPostList GameBlogPost={loadedGameBlogPosts}
+    />);
 }
+
+// function AllMeetupsPage() {
+    
+
+
+//     if (isLoading) {
+//         return (
+//             <section>
+//                 <p>Loading...</p>
+//             </section>
+//         );
+//     }
+
+//     return <section>
+//         <h1>All Meetups Page</h1>
+//         <MeetupList />
+//         </section>;
+// }
 
 export default GameBlogPage;

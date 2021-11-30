@@ -1,6 +1,8 @@
 .header {
     color: red;
-    background: #fff;
+    width: 100vw;
+    display: flex;
+    place-content: center;
 }
 
 .nav {
@@ -8,12 +10,13 @@
     background: rgb(24, 96, 124);
     /* style: none; */
     /* width: 500px; */
+    width: max-content;
 }
 
 .navlist {
     list-style: none;
     display: flex;
-    padding: 20 px;
+    padding: 20px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,8 +30,4 @@
 
 .navitem:hover {
     background-color: rgb(28, 28, 90);
-}
-
-.outterdiv {
-    text-align: -webkit-center;
 }

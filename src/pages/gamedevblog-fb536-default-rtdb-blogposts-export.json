@@ -1,0 +1,151 @@
+{
+    "blogpost981": {
+        "date": "29 Nov 2021",
+        "id": -2,
+        "image": "",
+        "update": {
+            "update1": "Account recovery added.",
+            "update2": "More work on UI."
+        }
+    },
+    "blogpost982": {
+        "date": "26 Nov 2021",
+        "id": -1,
+        "image": "https://giphy.com/embed/FUw5VfT6o9gwqsSTRK",
+        "update": {
+            "update1": "Shield bar and energy bar made into vertical bars and number handle added to both.",
+            "update2": "button to enable/disable dragging UI added."
+        }
+    },
+    "blogpost983": {
+        "date": "25 Nov 2021",
+        "id": 0,
+        "image": "https://giphy.com/embed/yqZMpsYgsO2qPyVtD6",
+        "update": {
+            "update1": "UI tool tips drawn and added.",
+            "update2": "UI buttons added to change between windows."
+        }
+    },
+    "blogpost984": {
+        "date": "24 Nov 2021",
+        "id": 1,
+        "image": "https://giphy.com/embed/7ckIlX54JL3KLtv4TO",
+        "update": {
+            "update1": "Player UI changes, work on inventory UI started.",
+            "update2": "Docking at ports added and some port UI added."
+        }
+    },
+
+    "blogpost985": {
+        "date": "23 Nov 2021",
+        "id": 2,
+        "image": "https://giphy.com/embed/WfYMRFFmW44hdtfei1",
+        "update": {
+            "update1": "Player Registration and Login by Username added.",
+            "update2": "Functionality added to all main menu buttons."
+        }
+    },
+    "blogpost986": {
+        "date": "19 Nov 2021",
+        "id": 4,
+        "image": "",
+        "update": {
+            "update1": "Player UI for buying shields added.",
+            "update2": "Main menu ui for all user registration created."
+        }
+    },
+    "blogpost987": {
+        "date": "18 Nov 2021",
+        "id": 3,
+        "image": "",
+        "update": {
+            "update1": "First interaction with backend performed today.",
+            "update2": "When players click the login button they are now logged using their computers system ID."
+        }
+    },
+    "blogpost989": {
+        "date": "17 Nov 2021",
+        "id ": 5,
+        "image": "https://giphy.com/embed/ZqiLAVj3Bnwkue8YoE",
+        "update": {
+            "update1": "Fixed a bug that was loading two scenes at the same time when changing scenes.",
+            "update2": "fixed some bugs with player tracker not properly adding players to tracking list."
+        }
+    },
+    "blogpost990": {
+        "date": "16 Nov 2021",
+        "id": 6,
+        "update": {
+            "update1": "Implemented dynamic solar cannon targeting.",
+            "update2": "Players are now tracked with a list when entering and leaving systems.",
+            "update3": "Scene transitions now handled by index rather than title"
+        }
+    },
+    "blogpost991": {
+        "date": "12 Nov 2021",
+        "id": 7,
+        "image": "https://giphy.com/embed/ZqiLAVj3Bnwkue8YoE",
+        "update": {
+            "update1": "Solar cannon now works on planets and its' bullets collide with player."
+        }
+    },
+    "blogpost992": {
+        "date": "11 Nov 2021",
+        "id": 8,
+        "image": "https://giphy.com/embed/IZt0TeY03qg1hYmXT9",
+        "update": {
+            "update1": "Solar Cannon now trackers player movement and follows them."
+        }
+    },
+    "blogpost993": {
+        "date": "10 Nov 2021",
+        "image": "https://giphy.com/embed/SCVGSoVQJ9zosxFP9W",
+        "update": {
+            "update1": "Solar cannon added that is controlled using the arrow keys."
+        }
+    },
+
+    "blogpost994": {
+        "date": "9 Nov 2021",
+        "id": 10,
+        "image": "https://giphy.com/embed/4mjejzJ1rSTcdICGuz",
+        "update": {
+            "update1": "Planet terrain added",
+            "update2": "Players can now land on planets",
+            "update3": "Players can now capture planets by entering a biodome at full energy"
+        }
+    },
+    "blogpost995": {
+        "date": "8 Nov 2021",
+        "id": 11,
+        "image": "https://giphy.com/embed/ukQFV9UkBK1TPuijte",
+        "update": {
+            "update1": "Energy bar now functional. When a player fires a missile or collides with something they lose energy."
+        }
+    },
+    "blogpost996": {
+        "date": "7 Nov 2021",
+        "id": 12,
+        "image": "https://giphy.com/embed/QhqucojS22AFKKw3wu",
+        "update": {
+            "update1": "Missile collision animation and sound added."
+        }
+    },
+    "blogpost997": {
+        "date": "4 Nov 2021",
+        "id": 13,
+        "image": "https://giphy.com/embed/UmPo9N7zZ5YI8SQopY",
+        "update": {
+            "update1": "Gravity added. Players are now pulled towards the center of a system rather than straight down."
+        }
+    },
+    "blogpost998": {
+        "date": "3 Nov 2021",
+        "id": 14,
+        "image": "https://giphy.com/embed/Oquh10MqrWWEYtGfYf",
+        "update": {
+            "update1": "Player controls added.",
+            "update2": "Missiles added."
+        }
+    }
+}

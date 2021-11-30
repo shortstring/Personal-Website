@@ -18,6 +18,9 @@ function MainNavigation() {
                     <li>
                         <Link to ="/gameblog" className={classes.navitem}>Game Dev Blog</Link>
                     </li>
+                    <li>
+                        <a href = "https://drive.google.com/file/d/108Kl-sLWPY5URhSVgD_qIOAT-_vprIAk/view" target="_blank" rel ="noreferrer" className ={classes.navitem}>Resume</a>
+                    </li>
                 </ul>
             </nav>
         </div>
