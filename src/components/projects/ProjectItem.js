@@ -19,11 +19,7 @@ function ProjectItem(props) {
                 <div className={classes.description}>
                     {props.description}
                 </div>
-                <a href= {props.github}>GitHub Repo</a>
-                <div className={classes.actions}>
-                    <button onClick={buttonHandler}>uhh</button>
-                    
-                </div>
+                <a href={props.github}>GitHub Repo</a>
             </Card>
         </li>
 

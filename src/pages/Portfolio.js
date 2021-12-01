@@ -10,7 +10,7 @@ let myProjects = [
     {
         title: 'The Movie Review Application',
         image: 'https://user-images.githubusercontent.com/77479441/139770884-067b4de5-7e2e-4469-b76f-22f2824be346.gif',
-        description: 'The project is a movie review application made with TMDB api, Django and VueJs.',
+        description: 'The project is a movie review application made with TMDB api, Django and VueJs. https://www.themoviereviewapplication.com/',
         github: 'https://github.com/shortstring/The-Movie-Review-Application'
     },
     {
