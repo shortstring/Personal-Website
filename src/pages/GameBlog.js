@@ -29,9 +29,8 @@ function GameBlogPage() {
         //excuted only under certain circumstances, when the 2nd argument has changed
         // fetch('https://react-getting-started-b876f-default-rtdb.firebaseio.com/meetups.json'
 
-        fetch('https://gamedevblog-fb536-default-rtdb.firebaseio.com/blogposts.json'
         //fetch defaults to a get request, and returns a promise
-        ).then(response => {
+        fetch('https://gamedevblog-fb536-default-rtdb.firebaseio.com/').then(response => {
             return response.json();//json also returns a promise as well so.. it has to be returned/resolved first
         }).then(data => {
             //we want to extract an array of meetups and then pass to meetup list
